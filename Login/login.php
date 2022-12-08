@@ -27,7 +27,6 @@
              
   <body style="background-color:#f2dbbb" class="text-center">
 
-  
   <nav class="navbar navbar-expand-lg " style="background-color:#943208" >
       <div class="container-fluid" >
         <div class="row g">
