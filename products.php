@@ -12,7 +12,7 @@
   
     if (!isset($_SESSION["logado"]) || $_SESSION["logado"] == FALSE){
   
-      header("Location:login.php");
+      header("Location:Login/login.php");
     }else
 
   $qt_carrinho = 0;
@@ -55,7 +55,7 @@
       <div class="container-fluid" >
         <div class="row g">
           <div class="col p-0">
-            <img src="paozinho.png" class="card-img-top" alt="..." style="width:85px; margin-left: 710px;">
+            <img src="./assets/paozinho.png" class="card-img-top" alt="..." style="width:85px; margin-left: 710px;">
           </div>
 
           <div class="collapse navbar-collapse col p-0" id="navbarText"  >
@@ -74,7 +74,7 @@
               </li>
 
               <li class="nav-item" >
-                <h5><a style=" color: #fff5df" class="nav-link" href="logout.php">Sair</a></h5>
+                <h5><a style=" color: #fff5df" class="nav-link" href="./Login/logout.php">Sair</a></h5>
               </li>
             </ul>
           </div>
@@ -94,21 +94,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="mesinha.jpg" class="d-block w-100" alt="...">
+      <img src="./assets/mesinha.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block" style="color:#943208">
         <h5>Mesa digitalizadora</h5>
         <p>Mesa digitalizadora cor de rosa, vem com caneta.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="controlerosa.jpg" class="d-block w-100" alt="...">
+      <img src="./assets/controlerosa.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block" style="color:#943208">
         <h5>Controle remoto gamer</h5>
         <p>Controle remoto gamer vem com orelhinhas.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="mouse.png" class="d-block w-100" alt="...">
+      <img src="./assets/mouse.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block" style="color:#943208">
         <h5>Mouse roda de ratinho</h5>
         <p>Mouse roda de ratinho viu bluetooth.</p>
@@ -143,7 +143,7 @@
 
       <div class="col">
         <div class="card h-100" style="border-radius: 30px;">
-          <img src="<?= $img_path ?>" class="card-img-top" alt="<?= $produtos['nome'] ?>">
+          <img src="./assets/<?= $img_path ?>" class="card-img-top" alt="<?= $produtos['nome'] ?>">
             <div class="card-body" style="background-color:#fff5df;">
               <h5 class="card-title" style="font-weight:bold; color:#943208"> <?= $produtos['nome'] ?></h5>
               <p class="card-text"><?= $produtos['descricao'] ?></p>

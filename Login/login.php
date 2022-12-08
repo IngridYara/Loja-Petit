@@ -7,7 +7,7 @@
       $_SESSION["logado"] = TRUE;
       $_SESSION["user"] = $_COOKIE["username"];
 
-      header("Location:products.php");
+      header("Location:./../products.php");
     }
      
 ?>
@@ -32,7 +32,7 @@
       <div class="container-fluid" >
         <div class="row g">
           <div class="col p-0">
-            <img src="paozinho.png" class="card-img-top" alt="..." style="width:85px; margin-left: 210px;">
+            <img src="./../assets/paozinho.png" class="card-img-top" alt="..." style="width:85px; margin-left: 210px;">
           </div>
 
           <div class="collapse navbar-collapse col p-0" id="navbarText"  >
@@ -43,11 +43,11 @@
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style=" margin-left: 200px; ">
               <li class="nav-item" >
-                <h5 > <a style=" color: #fffaee" class="nav-link" href="products.php">Produtos</a></h5>
+                <h5 > <a style=" color: #fffaee" class="nav-link" href="./../products.php">Produtos</a></h5>
               </li>
               
               <li class="nav-item" >
-                <h5 > <a style=" color: #fff5df" class="nav-link" href="carrinho.php">Carrinho</a></h5>
+                <h5 > <a style=" color: #fff5df" class="nav-link" href="./../carrinho.php">Carrinho</a></h5>
               </li>
 
               <li class="nav-item" >

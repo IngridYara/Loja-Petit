@@ -11,7 +11,7 @@
   
     if (!isset($_SESSION["logado"]) || $_SESSION["logado"] == FALSE){
   
-      header("Location:login.php");
+      header("Location:./Login/login.php");
     }else
 
   //recupera o carrinho que está na sessão ou cria um novo array
@@ -41,7 +41,7 @@
       <div class="container-fluid" >
         <div class="row g">
           <div class="col p-0">
-            <img src="paozinho.png" class="card-img-top" alt="..." style="width:85px; margin-left: 710px;">
+            <img src="./assets/paozinho.png" class="card-img-top" alt="..." style="width:85px; margin-left: 710px;">
           </div>
 
           <div class="collapse navbar-collapse col p-0" id="navbarText"  >
@@ -60,7 +60,7 @@
               </li>
 
               <li class="nav-item" >
-                <h5><a style=" color: #fff5df" class="nav-link" href="logout.php">Sair</a></h5>
+                <h5><a style=" color: #fff5df" class="nav-link" href="./Login/logout.php">Sair</a></h5>
               </li>
             </ul>
           </div>
